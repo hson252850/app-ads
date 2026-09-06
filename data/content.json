@@ -1,0 +1,108 @@
+{
+  "brand": {
+    "name": "Gạo",
+    "suffix": "Beauty"
+  },
+  "contact": {
+    "phoneDisplay": "0908 767 818",
+    "phoneIntl": "+84 908 767 818",
+    "tel": "tel:+84908767818",
+    "zalo": "#",
+    "addressLines": [
+      "012 lô D, Chung cư Nhiêu Lộc C, Phường Phú Thọ Hòa, Tp.HCM",
+      "(Đối diện cổng trường tiểu học Tân Hương)"
+    ],
+    "addressShort": "012 lô D, Chung cư Nhiêu Lộc C, P. Phú Thọ Hòa, Tp.HCM",
+    "hours": "8:30 – 20:00, tất cả các ngày trong tuần"
+  },
+  "nav": [
+    { "href": "#trangchu", "label": "Trang chủ" },
+    { "href": "#gioithieu", "label": "Giới thiệu" },
+    { "href": "#dichvu", "label": "Dịch vụ" },
+    { "href": "#daotao", "label": "Đào tạo" },
+    { "href": "#gallery", "label": "Gallery" },
+    { "href": "#lienhe", "label": "Liên hệ" }
+  ],
+  "hero": {
+    "eyebrow": "Chuyên Mi Thiết Kế · Nail Design · Gội Đầu Thư Giãn",
+    "title": "Gạo Beauty",
+    "description": "Không gian làm đẹp riêng cho phụ nữ hiện đại — nơi từng đường mi, từng nét vẽ nail và từng phút thư giãn đều được chăm chút như một tác phẩm.",
+    "marquee": ["Mi Thiết Kế", "Nail Design", "Gội Đầu Thư Giãn", "Nhận Đào Tạo Học Viên"]
+  },
+  "about": {
+    "eyebrow": "Về chúng tôi",
+    "title": "Gạo Beauty — nơi vẻ đẹp bắt đầu từ sự tinh tế",
+    "image": "/assets/IMG_1924.JPG",
+    "paragraphs": [
+      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty chuyên sâu ba lĩnh vực: mi thiết kế, nail design và gội đầu thư giãn. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
+      "Đội ngũ kỹ thuật viên được đào tạo bài bản, cập nhật liên tục các kỹ thuật mi và nail mới nhất, cùng quy trình vệ sinh dụng cụ nghiêm ngặt cho từng khách."
+    ],
+    "stats": [
+      { "value": "3+", "label": "Năm kinh nghiệm" },
+      { "value": "1000+", "label": "Khách hàng hài lòng" },
+      { "value": "3", "label": "Dịch vụ chuyên sâu" }
+    ]
+  },
+  "services": [
+    {
+      "tag": "Chuyên sâu",
+      "title": "Mi Thiết Kế",
+      "desc": "Thiết kế dáng mi riêng theo khuôn mặt, tôn nét tự nhiên hoặc quyến rũ tùy phong cách.",
+      "items": [
+        { "name": "Mi Classic tự nhiên", "price": "250.000đ" },
+        { "name": "Mi Volume bồng bềnh", "price": "350.000đ" },
+        { "name": "Mi Mega Volume sang trọng", "price": "450.000đ" }
+      ]
+    },
+    {
+      "tag": "Nghệ thuật",
+      "title": "Nail Design",
+      "desc": "Sơn gel bền màu, vẽ tay và đính đá theo yêu cầu, chăm sóc móng chuẩn spa.",
+      "items": [
+        { "name": "Sơn gel đơn sắc", "price": "150.000đ" },
+        { "name": "Nail Design vẽ tay / đính đá", "price": "250.000đ – 450.000đ" },
+        { "name": "Chăm sóc móng cơ bản", "price": "120.000đ" }
+      ]
+    },
+    {
+      "tag": "Thư giãn",
+      "title": "Gội Đầu Thư Giãn",
+      "desc": "Gội dưỡng sinh thảo dược kết hợp massage bấm huyệt, giải tỏa căng thẳng tức thì.",
+      "items": [
+        { "name": "Gội đầu dưỡng sinh thảo dược", "price": "100.000đ" },
+        { "name": "Massage da đầu & bấm huyệt", "price": "150.000đ" },
+        { "name": "Ủ dầu phục hồi tóc chuyên sâu", "price": "180.000đ" }
+      ]
+    }
+  ],
+  "training": {
+    "eyebrow": "Nhận đào tạo học viên",
+    "title": "Học nghề làm đẹp, cầm tay chỉ việc",
+    "description": "Gạo Beauty mở lớp đào tạo mi thiết kế và nail design cho người mới bắt đầu và người muốn nâng cao tay nghề. Lớp học số lượng nhỏ, thực hành trên khách thật, hỗ trợ định hướng mở tiệm sau khi tốt nghiệp.",
+    "cta": "Đăng ký tư vấn khóa học",
+    "courses": [
+      {
+        "name": "Khóa Mi Thiết Kế cơ bản – nâng cao",
+        "detail": "Từ Classic đến Volume, Mega Volume, cấp chứng chỉ sau tốt nghiệp."
+      },
+      {
+        "name": "Khóa Nail Design chuyên sâu",
+        "detail": "Kỹ thuật sơn gel, vẽ tay, đính đá và tư vấn mở tiệm nail."
+      },
+      {
+        "name": "Khóa Gội Đầu Dưỡng Sinh",
+        "detail": "Kỹ thuật massage, bấm huyệt và chăm sóc da đầu chuyên nghiệp."
+      }
+    ]
+  },
+  "gallery": [
+    { "id": "gal-1", "src": "/gallery/gal-1.webp", "label": "Mi thiết kế" },
+    { "id": "gal-2", "src": "/gallery/gal-2.webp", "label": "Nail design" },
+    { "id": "gal-3", "src": "/gallery/gal-3.webp", "label": "Gội đầu thư giãn" },
+    { "id": "gal-4", "src": "/gallery/gal-4.webp", "label": "Không gian salon" },
+    { "id": "gal-5", "src": "/gallery/gal-5.webp", "label": "Khách hàng" },
+    { "id": "gal-6", "src": "/gallery/gal-6.webp", "label": "Sản phẩm" },
+    { "id": "gal-7", "src": "/gallery/gal-7.webp", "label": "Đội ngũ" },
+    { "id": "gal-8", "src": "/gallery/gal-8.webp", "label": "Học viên thực hành" }
+  ]
+}
