@@ -7,13 +7,15 @@
     "phoneDisplay": "0908 767 818",
     "phoneIntl": "+84 908 767 818",
     "tel": "tel:+84908767818",
-    "zalo": "#",
+    "zalo": "https://zalo.me/0908767818",
     "addressLines": [
-      "012 lô D, Chung cư Nhiêu Lộc C, Phường Phú Thọ Hòa, Tp.HCM",
+      "Chung cư Nhiêu Lộc, 012D, Quận Tân Phú, Tp.HCM",
       "(Đối diện cổng trường tiểu học Tân Hương)"
     ],
-    "addressShort": "012 lô D, Chung cư Nhiêu Lộc C, P. Phú Thọ Hòa, Tp.HCM",
-    "hours": "8:30 – 20:00, tất cả các ngày trong tuần"
+    "addressShort": "Chung cư Nhiêu Lộc, 012D, Quận Tân Phú, Tp.HCM",
+    "hours": "8:30 – 20:00, tất cả các ngày trong tuần",
+    "mapUrl": "https://maps.app.goo.gl/soz6Qk4xduG7jqwGA",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.237165668496!2d106.6216683!3d10.793139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b67fc6c4397%3A0x675ed474b96b5897!2zTuG7kWkgTWkgVMOibiBQaMO6!5e0!3m2!1svi!2s!4v1788699947688!5m2!1svi!2s"
   },
   "nav": [
     { "href": "#trangchu", "label": "Trang chủ" },
@@ -24,17 +26,17 @@
     { "href": "#lienhe", "label": "Liên hệ" }
   ],
   "hero": {
-    "eyebrow": "Chuyên Mi Thiết Kế · Nail Design · Gội Đầu Thư Giãn",
+    "eyebrow": "Chuyên Nối Mi · Nail · Gội Đầu Thư Giãn",
     "title": "Gạo Beauty",
     "description": "Không gian làm đẹp riêng cho phụ nữ hiện đại — nơi từng đường mi, từng nét vẽ nail và từng phút thư giãn đều được chăm chút như một tác phẩm.",
-    "marquee": ["Mi Thiết Kế", "Nail Design", "Gội Đầu Thư Giãn", "Nhận Đào Tạo Học Viên"]
+    "marquee": ["Nối Mi", "Nail Design", "Gội Đầu Thư Giãn", "Nhận Đào Tạo Học Viên"]
   },
   "about": {
     "eyebrow": "Về chúng tôi",
     "title": "Gạo Beauty — nơi vẻ đẹp bắt đầu từ sự tinh tế",
     "image": "/assets/IMG_1924.JPG",
     "paragraphs": [
-      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty chuyên sâu ba lĩnh vực: mi thiết kế, nail design và gội đầu thư giãn. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
+      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty chuyên sâu ba lĩnh vực: nối mi, nail và gội đầu – chăm sóc da. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
       "Đội ngũ kỹ thuật viên được đào tạo bài bản, cập nhật liên tục các kỹ thuật mi và nail mới nhất, cùng quy trình vệ sinh dụng cụ nghiêm ngặt cho từng khách."
     ],
     "stats": [
@@ -46,48 +48,60 @@
   "services": [
     {
       "tag": "Chuyên sâu",
-      "title": "Mi Thiết Kế",
-      "desc": "Thiết kế dáng mi riêng theo khuôn mặt, tôn nét tự nhiên hoặc quyến rũ tùy phong cách.",
+      "title": "Nối Mi",
+      "desc": "Nối mi theo dáng mắt, từ Classic tự nhiên đến Volume, Mega Volume dày mượt.",
       "items": [
-        { "name": "Mi Classic tự nhiên", "price": "250.000đ" },
-        { "name": "Mi Volume bồng bềnh", "price": "350.000đ" },
-        { "name": "Mi Mega Volume sang trọng", "price": "450.000đ" }
+        { "name": "Nối mi (tùy dáng & độ dày)", "price": "200.000đ – 380.000đ" },
+        { "name": "Combo gội đầu + tẩy TBC + massage + đắp mặt nạ", "price": "99.000đ" }
       ]
     },
     {
-      "tag": "Nghệ thuật",
-      "title": "Nail Design",
-      "desc": "Sơn gel bền màu, vẽ tay và đính đá theo yêu cầu, chăm sóc móng chuẩn spa.",
+      "tag": "Làm móng",
+      "title": "Nail",
+      "desc": "Sơn gel, sơn thạch, đắp – úp móng, vẽ và đính đá trang trí theo yêu cầu.",
       "items": [
-        { "name": "Sơn gel đơn sắc", "price": "150.000đ" },
-        { "name": "Nail Design vẽ tay / đính đá", "price": "250.000đ – 450.000đ" },
-        { "name": "Chăm sóc móng cơ bản", "price": "120.000đ" }
+        { "name": "Sơn thường", "price": "30.000đ" },
+        { "name": "Sơn gel", "price": "80.000đ" },
+        { "name": "Sơn thạch", "price": "90.000đ" },
+        { "name": "Sơn mắt mèo / Flash", "price": "100.000đ – 130.000đ" },
+        { "name": "Sơn French / Ombre", "price": "10.000đ – 20.000đ / ngón" },
+        { "name": "Trang trí móng (vẽ, đính đá, tráng gương)", "price": "10.000đ – 30.000đ / ngón" },
+        { "name": "Phủ cứng móng", "price": "30.000đ – 50.000đ" },
+        { "name": "Úp móng", "price": "80.000đ – 100.000đ" },
+        { "name": "Fill / phá móng úp, phá gel", "price": "20.000đ – 80.000đ" },
+        { "name": "Chà gót chân + tẩy da chết", "price": "120.000đ – 150.000đ" }
       ]
     },
     {
       "tag": "Thư giãn",
-      "title": "Gội Đầu Thư Giãn",
-      "desc": "Gội dưỡng sinh thảo dược kết hợp massage bấm huyệt, giải tỏa căng thẳng tức thì.",
+      "title": "Gội Đầu & Chăm Sóc Da",
+      "desc": "Gội thảo dược, tẩy tế bào chết, massage thư giãn kết hợp chăm sóc da mặt.",
       "items": [
-        { "name": "Gội đầu dưỡng sinh thảo dược", "price": "100.000đ" },
-        { "name": "Massage da đầu & bấm huyệt", "price": "150.000đ" },
-        { "name": "Ủ dầu phục hồi tóc chuyên sâu", "price": "180.000đ" }
+        { "name": "Gội thường + rửa mặt", "price": "49.000đ" },
+        { "name": "Gội thảo dược", "price": "59.000đ" },
+        { "name": "Tẩy TBC + massage + đắp mặt", "price": "79.000đ" },
+        { "name": "Cắt da tay / chân", "price": "30.000đ" },
+        { "name": "Cạo mặt", "price": "20.000đ" },
+        { "name": "Lột mụn", "price": "30.000đ – 40.000đ" },
+        { "name": "Trang điểm, làm tóc", "price": "150.000đ – 200.000đ" },
+        { "name": "Kẹp thẳng, bấm phồng, uốn giả", "price": "50.000đ – 60.000đ" }
       ]
     }
   ],
   "training": {
     "eyebrow": "Nhận đào tạo học viên",
     "title": "Học nghề làm đẹp, cầm tay chỉ việc",
-    "description": "Gạo Beauty mở lớp đào tạo mi thiết kế và nail design cho người mới bắt đầu và người muốn nâng cao tay nghề. Lớp học số lượng nhỏ, thực hành trên khách thật, hỗ trợ định hướng mở tiệm sau khi tốt nghiệp.",
+    "description": "Gạo Beauty mở lớp đào tạo nối mi và nail cho người mới bắt đầu và người muốn nâng cao tay nghề. Lớp học số lượng nhỏ, thực hành trên khách thật, hỗ trợ định hướng mở tiệm sau khi tốt nghiệp.",
     "cta": "Đăng ký tư vấn khóa học",
+    "image": "/gallery/gal-8.webp",
     "courses": [
       {
-        "name": "Khóa Mi Thiết Kế cơ bản – nâng cao",
+        "name": "Khóa Nối Mi cơ bản – nâng cao",
         "detail": "Từ Classic đến Volume, Mega Volume, cấp chứng chỉ sau tốt nghiệp."
       },
       {
-        "name": "Khóa Nail Design chuyên sâu",
-        "detail": "Kỹ thuật sơn gel, vẽ tay, đính đá và tư vấn mở tiệm nail."
+        "name": "Khóa Nail chuyên sâu",
+        "detail": "Kỹ thuật sơn gel, sơn thạch, vẽ tay, đính đá và tư vấn mở tiệm nail."
       },
       {
         "name": "Khóa Gội Đầu Dưỡng Sinh",
@@ -96,7 +110,7 @@
     ]
   },
   "gallery": [
-    { "id": "gal-1", "src": "/gallery/gal-1.webp", "label": "Mi thiết kế" },
+    { "id": "gal-1", "src": "/gallery/gal-1.webp", "label": "Nối mi" },
     { "id": "gal-2", "src": "/gallery/gal-2.webp", "label": "Nail design" },
     { "id": "gal-3", "src": "/gallery/gal-3.webp", "label": "Gội đầu thư giãn" },
     { "id": "gal-4", "src": "/gallery/gal-4.webp", "label": "Không gian salon" },

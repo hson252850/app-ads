@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Contact, SiteContent } from "@/types/content";
 
 interface TrainingProps {
@@ -46,11 +47,15 @@ export default function Training({ training, contact }: TrainingProps) {
         </a>
       </div>
 
-      {/* Ảnh lớp học — placeholder, chờ ảnh thật từ khách hàng (tỉ lệ 4:5) */}
-      <div className="aspect-[4/5] overflow-hidden rounded-[24px] shadow-[var(--shadow-img-2)]">
-        <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(135deg,#efe6fa,#e1d0f2)] p-4 text-center text-[13px] tracking-[0.3px] text-ink-4">
-          Ảnh lớp học / thực hành
-        </div>
+      {/* Ảnh lớp học / thực hành (tỉ lệ 4:5) */}
+      <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] shadow-[var(--shadow-img-2)]">
+        <Image
+          src={training.image}
+          alt="Học viên thực hành tại lớp đào tạo Gạo Beauty"
+          fill
+          sizes="(min-width: 860px) 40vw, 100vw"
+          className="object-cover"
+        />
       </div>
     </section>
   );

@@ -43,10 +43,10 @@ components/
   Header.tsx        # 'use client' — state menuOpen, hamburger < 860px
   Hero.tsx          # gradient động, marquee, quầng sáng float, fade-up
   About.tsx         # ảnh thật IMG_1924 + 3 số liệu
-  Services.tsx      # 3 card dịch vụ + bảng giá
-  Training.tsx      # 3 khóa học + ảnh placeholder 4:5
+  Services.tsx      # 3 card dịch vụ + bảng giá (đồng bộ Google Business)
+  Training.tsx      # 3 khóa học + ảnh gal-8.webp (tỉ lệ 4:5)
   Gallery.tsx       # lưới 8 ảnh (2 cột mobile / 4 desktop)
-  Contact.tsx       # địa chỉ / SĐT / giờ + placeholder bản đồ
+  Contact.tsx       # địa chỉ / SĐT / giờ + nhúng Google Maps + nút Zalo
   Footer.tsx
   SectionHead.tsx   # cụm tiêu đề canh giữa (Dịch vụ, Gallery)
 data/
@@ -64,16 +64,20 @@ Text, bảng giá, khóa học, ảnh gallery, menu nav đều nằm trong `data
 (import trực tiếp lúc build). Có thể thay bằng fetch từ CMS/headless về sau, miễn
 giữ đúng shape `SiteContent` trong `types/content.ts`.
 
-## Ảnh
+## Ảnh & tích hợp
 
 - `public/assets/IMG_1924.JPG` — ảnh thật chủ salon, section **Giới thiệu**.
-- `public/gallery/gal-1..gal-8.webp` — 8 ảnh thật của salon, lưới **Gallery**
-  (thứ tự gal-1 → gal-8, trái sang phải, trên xuống dưới).
-- **Placeholder** (chờ ảnh khách hàng): ảnh nền hero (đang là hoạ tiết mờ CSS) và
-  ảnh khối Đào tạo (ô lavender có nhãn).
-- Bản đồ ở section Liên hệ: khối placeholder — nhúng Google Maps khi triển khai.
+- `public/gallery/gal-1..gal-8.webp` — 8 ảnh thật của salon cho lưới **Gallery**;
+  `gal-8.webp` đồng thời dùng cho ảnh khối **Đào tạo**.
+- **Placeholder** còn lại: ảnh nền hero (đang là hoạ tiết mờ CSS).
+- **Google Maps**: section Liên hệ nhúng iframe địa điểm "Nối Mi Tân Phú"
+  (`contact.mapEmbedUrl`) + link chỉ đường `contact.mapUrl`. Muốn đổi vị trí:
+  Google Maps → Share → *Embed a map* → copy `src` vào `mapEmbedUrl`.
+- **Nút "Nhắn Zalo"** trỏ tới `https://zalo.me/0908767818` (mở tab mới).
+- **Bảng giá / dịch vụ** trong `data/content.json` lấy theo bài đăng "Bảng giá
+  dịch vụ" trên Google Business của salon (cập nhật 07/04/2026).
 
-## Chưa có (theo README thiết kế)
+## Chưa có
 
 Không có form nhập liệu. Đặt lịch qua gọi điện / Zalo trực tiếp. Nếu cần thêm form
 đặt lịch — làm ở bước sau.

@@ -15,7 +15,7 @@ export default function Services({ services }: ServicesProps) {
           {services.map((svc) => (
             <article
               key={svc.title}
-              className="flex flex-col rounded-[20px] bg-white px-[30px] py-9 shadow-[var(--shadow-card)]"
+              className="flex flex-col self-start rounded-[20px] bg-white px-[30px] py-9 shadow-[var(--shadow-card)]"
             >
               <p className="mb-2 font-heading text-[12px] uppercase tracking-[2px] text-purple-500">
                 {svc.tag}
@@ -26,7 +26,7 @@ export default function Services({ services }: ServicesProps) {
               <p className="mb-[22px] text-[14.5px] leading-[1.7] text-ink-3">
                 {svc.desc}
               </p>
-              <div className="mt-auto flex flex-col gap-3 border-t border-line-2 pt-[18px]">
+              <div className="flex flex-col gap-3 border-t border-line-2 pt-[18px]">
                 {svc.items.map((it) => (
                   <div
                     key={it.name}

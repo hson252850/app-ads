@@ -81,6 +81,8 @@ export default function Contact({ contact }: ContactProps) {
           </a>
           <a
             href={contact.zalo}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full border-[1.5px] border-purple-500 px-[26px] py-[13px] text-[14.5px] font-medium text-purple-800 transition-colors hover:bg-line-2"
           >
             Nhắn Zalo
@@ -88,17 +90,24 @@ export default function Contact({ contact }: ContactProps) {
         </div>
       </div>
 
-      {/* Bản đồ — placeholder, nhúng Google Maps khi triển khai chính thức */}
-      <div className="flex min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-[20px] border border-line bg-lav-100 p-8 text-center">
-        <span className="text-[32px]" aria-hidden>
-          🗺️
-        </span>
-        <p className="mt-[14px] font-semibold text-purple-900">
-          Bản đồ đường đến Gạo Beauty
-        </p>
-        <p className="mt-1.5 text-[13.5px] text-ink-4">
-          Nhúng Google Maps tại đây khi triển khai website chính thức
-        </p>
+      {/* Bản đồ Google Maps */}
+      <div className="flex flex-col overflow-hidden rounded-[20px] border border-line bg-lav-100">
+        <iframe
+          src={contact.mapEmbedUrl}
+          title="Bản đồ đường đến Gạo Beauty"
+          className="min-h-[300px] w-full flex-1 border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        />
+        <a
+          href={contact.mapUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 border-t border-line px-4 py-3 text-[13.5px] font-medium text-purple-800 transition-colors hover:bg-line-2"
+        >
+          <span aria-hidden>🗺️</span> Xem đường đi trên Google Maps
+        </a>
       </div>
     </section>
   );

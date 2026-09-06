@@ -44,6 +44,10 @@ export interface Contact {
   addressLines: string[];
   addressShort: string;
   hours: string;
+  /** Link Google Maps rút gọn (mở app / chỉ đường). */
+  mapUrl: string;
+  /** URL nhúng iframe Google Maps (Share → Embed a map). */
+  mapEmbedUrl: string;
 }
 
 export interface SiteContent {
@@ -69,6 +73,7 @@ export interface SiteContent {
     title: string;
     description: string;
     cta: string;
+    image: string;
     courses: Course[];
   };
   gallery: GalleryItem[];
