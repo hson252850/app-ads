@@ -50,7 +50,7 @@ export const SITE = {
    * Chỉ những URL có thật mới được đưa vào schema `sameAs`.
    */
   social: {
-    facebook: "https://www.facebook.com/profile.php?id=61594071727281",
+    facebook: "https://www.facebook.com/gaobeauty.tanphu",
     instagram: "",
     tiktok: "",
   },
