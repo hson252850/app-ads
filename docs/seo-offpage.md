@@ -376,7 +376,7 @@ non-www + http/https về 1 chỗ báo cáo.
 - [x] 12. GSC: submit `sitemap.xml` + Request indexing trang chủ
 - [ ] 13. GSC: thêm Domain-property (TXT ở Mắt Bão) — tuỳ chọn
 - [x] 14. Bing Webmaster: import from GSC
-- [x] 15. Facebook Page: tạo xong (đã gắn vào site + footer + schema). Còn: đặt username @gaobeauty.tanphu khi đủ điều kiện + đăng bài (5 caption ở Phần 4.2)
+- [x] 15. Facebook Page: tạo xong (đã gắn vào site + footer + schema). Còn: đặt username xong (facebook.com/gaobeauty.tanphu). Còn: đăng bài (5 caption ở Phần 4.2)
 - [ ] 16. Instagram: tạo + 3 bài → gửi Claude URL
 - [ ] 17. TikTok: tạo + 3 video → gửi Claude URL
 - [x] 18. Facebook đã vào `lib/seo.ts` + icon footer + `sameAs` (IG/TikTok chờ URL)
