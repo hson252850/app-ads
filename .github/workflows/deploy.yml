@@ -1,37 +1,26 @@
-name: Build & publish static site
+name: Deploy tới GitHub Pages
 
-# GitHub Pages của repo này đang ở chế độ "Deploy from a branch" (main / root).
-# Workflow build Next.js ra tĩnh rồi commit file build vào gốc nhánh main để
-# Pages phục vụ. Giữ nguyên source, CNAME, app-ads.txt.
+# Pages của repo app-ads: Source = "GitHub Actions".
+# Workflow build Next.js ra tĩnh (./out) rồi deploy qua actions/deploy-pages.
+# CNAME + app-ads.txt được copy vào bản build để giữ custom domain + quảng cáo.
 
 on:
   push:
     branches: [main]
-    paths:
-      - "app/**"
-      - "components/**"
-      - "lib/**"
-      - "data/**"
-      - "public/**"
-      - "types/**"
-      - "next.config.mjs"
-      - "postcss.config.mjs"
-      - "tsconfig.json"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: publish
+  group: pages
   cancel-in-progress: true
 
 jobs:
-  publish:
-    # Chỉ chạy ở repo deploy (có Pages + CNAME), bỏ qua ở repo nguồn.
+  build:
+    # Chỉ chạy ở repo deploy, bỏ qua ở repo nguồn.
     if: github.repository == 'hson252850/app-ads'
     runs-on: ubuntu-latest
     steps:
@@ -44,31 +33,33 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+
       - name: Cài dependencies
         run: npm ci
 
       - name: Build (xuất tĩnh vào ./out)
         run: npm run build
 
-      - name: Đưa bản build ra gốc repo
+      - name: Giữ file cấu hình ads + tắt Jekyll
         run: |
           cp CNAME out/CNAME
           cp app-ads.txt out/app-ads.txt
           touch out/.nojekyll
-          # Xoá bản publish cũ ở gốc, thay bằng bản mới (source vẫn giữ nguyên)
-          rm -rf _next 404 404.html index.html index.txt .nojekyll \
-                 assets gallery favicon.ico icon.png apple-icon.png
-          cp -R out/. .
-          rm -rf out
 
-      - name: Commit bản build
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "Không có thay đổi ở bản build."
-          else
-            git commit -m "chore: rebuild static site [skip ci]"
-            git push
-          fi
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
