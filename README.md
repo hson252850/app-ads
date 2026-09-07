@@ -113,6 +113,8 @@ Tân Phú, mi thiết kế*.
 - `social.facebook` / `instagram` / `tiktok` — dán URL khi đã tạo trang.
 
 **Off-page (chưa làm — quyết định phần lớn thứ hạng local):**
+Kế hoạch từng bước + nội dung dán sẵn (mô tả GBP, bài đăng, caption MXH, mẫu
+tin xin đánh giá, shot-list ảnh, checklist video xác minh): **`docs/seo-offpage.md`**.
 
 1. **Google Business Profile** — claim + xác minh; category chính "Tiệm làm
    móng", phụ "Dịch vụ nối mi lông mi" + "Thẩm mỹ viện"; giờ 7:30–20:00; up
