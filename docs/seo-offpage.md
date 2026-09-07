@@ -364,13 +364,13 @@ non-www + http/https về 1 chỗ báo cáo.
 - [ ] 5. GBP: thêm Q&A
 - [ ] 6. Reviews: lấy link đánh giá → gửi Claude làm QR
 - [ ] 7. Reviews: đạt ≥ 5 → gửi Claude số sao + số lượt
-- [ ] 8. Mắt Bão: thêm 4 bản ghi A (apex) + CNAME www → hson252850.github.io
-- [ ] 9. GitHub app-ads → Settings → Pages: DNS check ✓ + tick Enforce HTTPS
-- [ ] 10. Nghiệm thu: `noimitanphu.com` tự 301 sang `www`, có HTTPS
-- [ ] 11. GSC: lấy HTML tag → gửi Claude chuỗi `content` → deploy → Verify
-- [ ] 12. GSC: submit `sitemap.xml` + Request indexing trang chủ
-- [ ] 13. GSC: thêm Domain-property (TXT ở Mắt Bão)
-- [ ] 14. Bing Webmaster: import from GSC
+- [x] 8. Mắt Bão: 4 bản ghi A (apex) + CNAME www → hson252850.github.io (DNS đã trỏ đúng)
+- [x] 9. GitHub Pages: HTTPS hoạt động (HTTP/2 200, server GitHub)
+- [x] 10. Nghiệm thu: `noimitanphu.com` → 301 → `https://www.noimitanphu.com/` ✓
+- [x] 11. GSC: verify bằng HTML tag (token trong app/layout.tsx) ✓
+- [x] 12. GSC: submit `sitemap.xml` + Request indexing trang chủ
+- [ ] 13. GSC: thêm Domain-property (TXT ở Mắt Bão) — tuỳ chọn
+- [x] 14. Bing Webmaster: import from GSC
 - [ ] 15. Facebook Page: tạo + 3 bài
 - [ ] 16. Instagram: tạo + 3 bài
 - [ ] 17. TikTok: tạo + 3 video
