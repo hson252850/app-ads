@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Design tokens — theo design_handoff_gao_beauty/README.md (tông tím)
+   ========================================================================== */
+@theme {
+  --color-purple-900: #3f2465; /* tím đậm / màu chính */
+  --color-purple-800: #4a2c6d; /* tím trung — nút */
+  --color-purple-600: #6b3fa0; /* accent */
+  --color-purple-500: #8659b5; /* accent */
+  --color-purple-400: #9b72c4; /* accent sáng */
+
+  --color-lav-100: #f4eefb; /* lavender nền phụ */
+  --color-bg: #fbf8fd; /* nền tổng thể */
+
+  --color-line: #e7daf3; /* border tím nhạt */
+  --color-line-2: #eee5f8;
+
+  --color-ink: #2b2233; /* chữ chính */
+  --color-ink-2: #4a4054; /* chữ phụ */
+  --color-ink-3: #6b5f78;
+  --color-ink-4: #8b7f96;
+
+  --color-footer-1: #c9a9e9; /* footer — chữ phụ */
+  --color-footer-2: #a788c9;
+
+  --font-script: var(--font-dancing), "Snell Roundhand", cursive;
+  --font-heading: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
+
+  /* Breakpoint riêng 860px (theo README — nav ngang / hamburger) */
+  --breakpoint-nav: 860px;
+
+  --shadow-card: 0 16px 40px -24px rgb(74 44 109 / 0.28);
+  --shadow-img: 0 24px 48px -20px rgb(74 44 109 / 0.35);
+  --shadow-img-2: 0 24px 48px -20px rgb(74 44 109 / 0.3);
+
+  /* Animations */
+  --animate-gb-gradient: gbGradient 16s ease infinite;
+  --animate-gb-marquee: gbMarquee 22s linear infinite;
+  --animate-gb-float1: gbFloat1 12s ease-in-out infinite;
+  --animate-gb-float2: gbFloat2 14s ease-in-out infinite;
+  --animate-hero-eyebrow: fadeUp 0.8s 0.1s ease forwards;
+  --animate-hero-title: fadeUp 0.9s 0.2s ease forwards;
+}
+
+@keyframes gbGradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes gbMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes gbFloat1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, 20px);
+  }
+}
+@keyframes gbFloat2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-24px, -18px);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: var(--color-purple-600);
+    text-decoration: none;
+  }
+}
+
+/* Nền gradient / quầng sáng của hero — gọn hơn khi để ở đây thay vì class dài */
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      #3f2465,
+      #6b3fa0,
+      #9b72c4,
+      #6b3fa0,
+      #3f2465
+    );
+    background-size: 300% 300%;
+  }
+  .hero-bg-pattern {
+    background:
+      radial-gradient(circle at 20% 30%, rgb(255 255 255 / 0.5), transparent 45%),
+      radial-gradient(circle at 80% 70%, rgb(255 255 255 / 0.35), transparent 40%);
+  }
+  .hero-orb-1 {
+    background: radial-gradient(
+      circle,
+      rgb(255 255 255 / 0.16),
+      transparent 70%
+    );
+  }
+  .hero-orb-2 {
+    background: radial-gradient(
+      circle,
+      rgb(255 255 255 / 0.12),
+      transparent 70%
+    );
+  }
+}

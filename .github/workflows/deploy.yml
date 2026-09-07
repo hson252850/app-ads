@@ -1,0 +1,64 @@
+name: Deploy tới GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Quyền cho GITHUB_TOKEN để deploy lên Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Chỉ chạy 1 lượt deploy tại một thời điểm
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # Chỉ deploy từ repo app-ads (repo có Pages + CNAME). Bỏ qua ở repo nguồn.
+    if: github.repository == 'hson252850/app-ads'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cài Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Cấu hình Pages
+        uses: actions/configure-pages@v5
+
+      - name: Cài dependencies
+        run: npm ci
+
+      - name: Build (xuất tĩnh vào ./out)
+        run: npm run build
+
+      - name: Giữ file cấu hình ads + tắt Jekyll
+        run: |
+          # CNAME (custom domain) và app-ads.txt nằm ở gốc repo, copy vào bản build
+          cp CNAME out/CNAME
+          cp app-ads.txt out/app-ads.txt
+          touch out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
