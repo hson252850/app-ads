@@ -82,9 +82,22 @@ giữ đúng shape `SiteContent` trong `types/content.ts`.
 Không có form nhập liệu. Đặt lịch qua gọi điện / Zalo trực tiếp. Nếu cần thêm form
 đặt lịch — làm ở bước sau.
 
-## Đưa lên GitHub
+## Deploy — GitHub Pages
 
-Repo đã `git init` sẵn (nhánh `main`). Sau khi tạo repo rỗng trên GitHub:
+Site xuất tĩnh (`output: "export"` trong `next.config.mjs`) nên chạy được trên
+GitHub Pages, không cần Node server.
+
+- Build tay: `npm run build` → thư mục `out/` (đã `.gitignore`).
+- Repo deploy: **`hson252850/app-ads`** (đã có `CNAME` = `www.noimitanphu.com`
+  và `app-ads.txt` cho quảng cáo — 2 file này giữ nguyên ở gốc repo).
+- Workflow `.github/workflows/deploy.yml` tự build + copy `CNAME` / `app-ads.txt`
+  vào bản build + deploy. Chỉ chạy ở repo `app-ads` (guard `github.repository`).
+
+**Bước thủ công 1 lần:** trong repo `app-ads` → *Settings → Pages →
+Build and deployment → Source* → chọn **GitHub Actions**. Từ đó mỗi lần push
+`main` sẽ tự deploy lên `https://www.noimitanphu.com`.
+
+## Đưa lên GitHub (repo nguồn)
 
 ```bash
 git remote add origin git@github.com:<user>/<repo>.git
