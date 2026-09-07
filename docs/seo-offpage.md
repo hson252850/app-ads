@@ -5,12 +5,20 @@
 > Phần on-page (code) đã xong — xem `README.md` mục SEO. File này là phần
 > **off-page** bạn tự thao tác, kèm sẵn mọi đoạn text để copy.
 
+## Chiến lược tên
+
+- **Google Business Profile giữ tên "Nối Mi Tân Phú"** (đã verify, không đổi).
+- **"Gạo Beauty"** là thương hiệu — đẩy SEO qua: website (logo, nội dung),
+  mạng xã hội, phần mô tả GBP, bài đăng GBP, và schema `alternateName`.
+- Schema trên web: `name` = "Nối Mi Tân Phú" (khớp GBP), `alternateName` = "Gạo Beauty".
+
 ## Thông tin chuẩn (NAP) — dùng GIỐNG HỆT ở mọi nơi
 
 | Trường | Giá trị |
 |---|---|
-| Tên | **Gạo Beauty** (mô tả kèm: "Nối Mi Tân Phú") |
-| Địa chỉ | Chung cư Nhiêu Lộc, 012D, Quận Tân Phú, TP.HCM |
+| Tên (GBP + citation) | **Nối Mi Tân Phú** |
+| Tên thương hiệu (web + MXH) | **Gạo Beauty** |
+| Địa chỉ | 012D, Chung cư Nhiêu Lộc, Phường Tân Quý, Quận Tân Phú, TP.HCM (76000) |
 | Mô tả vị trí | Đối diện cổng trường tiểu học Tân Hương |
 | Điện thoại | 0908 767 818 |
 | Giờ mở cửa | 7:30 – 20:00, tất cả các ngày trong tuần |
@@ -42,21 +50,11 @@
 
 # PHẦN 1 — Google Business Profile (quan trọng nhất)
 
-Trạng thái hiện tại: listing **"Nối Mi Tân Phú"** đã tồn tại, 5.0★ (1 đánh giá), **chưa claim**.
+✅ **Đã claim + verify xong** (07/09/2026) — profile "Nối Mi Tân Phú", store code
+`00639726320983444316`, địa chỉ 012D Chung Cư Nhiêu Lộc, P.Tân Quý, Q.Tân Phú.
+Giữ nguyên tên "Nối Mi Tân Phú". Rating: 5.0★ / 1 lượt.
 
-### 1.1 Claim
-1. Vào https://business.google.com bằng tài khoản Google của tiệm.
-2. Tìm **"Nối Mi Tân Phú"** → **Nhận quyền quản lý / Claim this business**.
-3. Nếu Google hỏi đổi tên: đổi thành **Gạo Beauty** (không nhồi từ khoá vào tên — Google phạt).
-
-### 1.2 Xác minh (thường là quay video)
-Quay **1 video liên tục, không tắt máy giữa chừng**, khoảng 1–2 phút, thể hiện đủ 3 ý:
-
-- [ ] **Bạn đang ở đúng địa điểm**: quay cảnh đường xung quanh, biển tên đường gần đó, cổng trường tiểu học Tân Hương, rồi đi vào tiệm.
-- [ ] **Bảng hiệu**: quay rõ bảng hiệu có tên tiệm + số nhà 012D.
-- [ ] **Bằng chứng bạn là chủ/quản lý**: quay bên trong (khu nối mi, khu nail, khu gội đầu, tủ dụng cụ, quầy), và một trong: mở/khoá cửa, hoá đơn điện–nước mang tên/địa chỉ tiệm, giấy phép kinh doanh, máy POS, kho sản phẩm.
-
-Nộp xong chờ Google duyệt (vài ngày – 2 tuần).
+Việc còn lại: điền hồ sơ cho đầy (mục 1.3 → 1.8).
 
 ### 1.3 Category
 
@@ -69,7 +67,7 @@ Nộp xong chờ Google duyệt (vài ngày – 2 tuần).
 **Mô tả doanh nghiệp** (paste vào ô "Mô tả", ~600 ký tự):
 
 ```
-Gạo Beauty (Nối Mi Tân Phú) là salon làm đẹp tại Quận Tân Phú, TP.HCM — chuyên nối mi thiết kế, nail design – làm móng và gội đầu thư giãn. Salon nằm tại Chung cư Nhiêu Lộc, 012D, ngay đối diện cổng trường tiểu học Tân Hương, thuận tiện cho khách khu Tân Quý, Hoà Thạnh, Phú Thọ Hoà, Sơn Kỳ.
+Nối Mi Tân Phú – Gạo Beauty là salon làm đẹp tại Quận Tân Phú, TP.HCM — chuyên nối mi thiết kế, nail design – làm móng và gội đầu thư giãn. Salon nằm tại 012D Chung cư Nhiêu Lộc, Phường Tân Quý, ngay đối diện cổng trường tiểu học Tân Hương, thuận tiện cho khách khu Tân Quý, Hoà Thạnh, Phú Thọ Hoà, Sơn Kỳ.
 
 Đội ngũ kỹ thuật viên hơn 16 năm kinh nghiệm, tư vấn riêng theo dáng mắt và đôi tay của từng khách, dụng cụ vệ sinh riêng cho mỗi người. Dịch vụ: nối mi Classic – Volume – Mega Volume; sơn gel, sơn thạch, sơn mắt mèo, úp – phá móng, vẽ và đính đá; gội thảo dược, tẩy tế bào chết, massage đầu – vai – gáy. Có nhận đào tạo học viên nối mi và nail.
 
@@ -305,27 +303,75 @@ Claude thêm vào `lib/seo.ts` (`social`) → hiện icon ở footer + vào sche
 
 ---
 
-# PHẦN 5 — Redirect tên miền (1 lần)
+# PHẦN 5 — Tên miền Mắt Bão + GitHub Pages (1 lần)
 
-- Mở thử `http://noimitanphu.com` (KHÔNG www). Nếu tự nhảy sang `https://www.noimitanphu.com` → xong.
-- Nếu không: cần cấu hình ở nhà cung cấp DNS. **Cho Claude biết DNS đang ở đâu** → Claude đưa bước chính xác (thường là thêm bản ghi `A`/`ALIAS` cho apex trỏ GitHub Pages, hoặc bật "redirect" nếu nhà cung cấp có).
+Tên miền `noimitanphu.com` mua ở **Mắt Bão**, site chạy trên **GitHub Pages**
+(repo deploy `hson252850/app-ads`, đã có file `CNAME` = `www.noimitanphu.com`).
+
+### 5.1 Cấu hình DNS ở Mắt Bão
+
+Đăng nhập id.matbao.net → **Quản lý tên miền** → `noimitanphu.com` → **DNS / Quản lý bản ghi**
+(nếu tên miền đang trỏ nameserver Mắt Bão; nếu bạn đã đưa sang Cloudflare thì làm bên Cloudflare).
+
+Tạo các bản ghi sau (xoá bản ghi A/CNAME/Redirect cũ nào trỏ "parking" của Mắt Bão):
+
+| Loại | Host / Tên | Giá trị | TTL |
+|---|---|---|---|
+| A | `@` | `185.199.108.153` | 3600 |
+| A | `@` | `185.199.109.153` | 3600 |
+| A | `@` | `185.199.110.153` | 3600 |
+| A | `@` | `185.199.111.153` | 3600 |
+| CNAME | `www` | `hson252850.github.io` | 3600 |
+
+*(Tuỳ chọn, thêm IPv6 nếu panel cho phép AAAA):*
+`2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` — Host `@`.
+
+- **Không** dùng chức năng "Chuyển hướng URL / URL Frame" của Mắt Bão cho `@` — sẽ hỏng HTTPS. Dùng 4 bản ghi A ở trên.
+- Nếu panel bắt buộc có 1 bản ghi CNAME `@` thì tên miền này không hỗ trợ apex chuẩn — báo Claude để chuyển hướng bằng cách khác.
+
+### 5.2 Kiểm tra ở GitHub
+
+Repo `hson252850/app-ads` → **Settings → Pages**:
+- **Custom domain** = `www.noimitanphu.com` (đã set qua file `CNAME`) — chờ tới khi hiện dấu ✓ xanh "DNS check successful".
+- Tick **Enforce HTTPS** (cấp SSL có thể mất tới 24h sau khi DNS đúng).
+
+### 5.3 Nghiệm thu (sau 15 phút – vài giờ DNS lan)
+
+- `https://www.noimitanphu.com` → mở bình thường, có khoá HTTPS.
+- `http://noimitanphu.com` (KHÔNG www) → **tự 301 sang** `https://www.noimitanphu.com`
+  (GitHub Pages tự làm khi 4 bản ghi A apex đã trỏ đúng).
+- Check nhanh: `dig noimitanphu.com +short` → phải ra 4 IP `185.199.108–111.153`.
+
+### 5.4 Xác minh Domain-property trong Search Console (tuỳ chọn, nên làm)
+
+GSC → Add property → **Domain** → `noimitanphu.com` → Google cho 1 bản ghi **TXT**:
+
+| Loại | Host | Giá trị |
+|---|---|---|
+| TXT | `@` | `google-site-verification=...` (Google cấp) |
+
+Dán vào Mắt Bão DNS → quay lại GSC bấm Verify. Domain-property gom cả `www` +
+non-www + http/https về 1 chỗ báo cáo.
 
 ---
 
 # Bảng theo dõi tiến độ
 
-- [ ] 1. GBP: claim xong
-- [ ] 2. GBP: nộp video xác minh
-- [ ] 3. GBP: verify thành công
-- [ ] 4. GBP: điền category + mô tả + dịch vụ + giờ + khu vực
-- [ ] 5. GBP: up ≥ 20 ảnh
-- [ ] 6. GBP: đăng bài 1
-- [ ] 7. Reviews: có link đánh giá → gửi Claude làm QR
-- [ ] 8. Reviews: đạt ≥ 5 → gửi Claude số sao + số lượt
-- [ ] 9. GSC: verify + submit sitemap + request indexing
-- [ ] 10. Bing: import from GSC
-- [ ] 11. Facebook Page: tạo + 3 bài
-- [ ] 12. Instagram: tạo + 3 bài
-- [ ] 13. TikTok: tạo + 3 video
-- [ ] 14. Gửi Claude 3 URL MXH
-- [ ] 15. Redirect apex `noimitanphu.com` → `www` hoạt động
+- [x] 1. GBP: claim + verify xong (07/09/2026)
+- [ ] 2. GBP: điền category + mô tả + dịch vụ + giờ + khu vực
+- [ ] 3. GBP: up ≥ 20 ảnh
+- [ ] 4. GBP: đăng bài 1 (rồi 1 bài/tuần)
+- [ ] 5. GBP: thêm Q&A
+- [ ] 6. Reviews: lấy link đánh giá → gửi Claude làm QR
+- [ ] 7. Reviews: đạt ≥ 5 → gửi Claude số sao + số lượt
+- [ ] 8. Mắt Bão: thêm 4 bản ghi A (apex) + CNAME www → hson252850.github.io
+- [ ] 9. GitHub app-ads → Settings → Pages: DNS check ✓ + tick Enforce HTTPS
+- [ ] 10. Nghiệm thu: `noimitanphu.com` tự 301 sang `www`, có HTTPS
+- [ ] 11. GSC: lấy HTML tag → gửi Claude chuỗi `content` → deploy → Verify
+- [ ] 12. GSC: submit `sitemap.xml` + Request indexing trang chủ
+- [ ] 13. GSC: thêm Domain-property (TXT ở Mắt Bão)
+- [ ] 14. Bing Webmaster: import from GSC
+- [ ] 15. Facebook Page: tạo + 3 bài
+- [ ] 16. Instagram: tạo + 3 bài
+- [ ] 17. TikTok: tạo + 3 video
+- [ ] 18. Gửi Claude 3 URL MXH → deploy icon footer + schema sameAs

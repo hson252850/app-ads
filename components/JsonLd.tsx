@@ -37,8 +37,8 @@ export default function JsonLd() {
   const business: Record<string, unknown> = {
     "@type": ["HealthAndBeautyBusiness", "NailSalon"],
     "@id": businessId,
-    name: SITE.name,
-    alternateName: SITE.alternateName,
+    name: SITE.gmbName,
+    alternateName: SITE.brand,
     description:
       "Salon nối mi thiết kế, nail design, làm móng và gội đầu thư giãn tại Quận Tân Phú, TP.HCM. Nhận đào tạo học viên.",
     url: `${SITE.url}/`,
@@ -55,10 +55,11 @@ export default function JsonLd() {
     paymentAccepted: "Tiền mặt, Chuyển khoản",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Chung cư Nhiêu Lộc, 012D",
-      addressLocality: "Quận Tân Phú",
-      addressRegion: "TP. Hồ Chí Minh",
-      addressCountry: "VN",
+      streetAddress: SITE.address.streetAddress,
+      addressLocality: SITE.address.addressLocality,
+      addressRegion: SITE.address.addressRegion,
+      postalCode: SITE.address.postalCode,
+      addressCountry: SITE.address.addressCountry,
     },
     geo: {
       "@type": "GeoCoordinates",

@@ -59,15 +59,18 @@ export const metadata: Metadata = {
     "Gạo Beauty",
     "Nối Mi Tân Phú",
   ],
-  authors: [{ name: SITE.name }],
-  creator: SITE.name,
-  publisher: SITE.name,
+  authors: [{ name: SITE.brand }],
+  creator: SITE.brand,
+  publisher: SITE.brand,
   alternates: { canonical: "/" },
+  verification: {
+    google: "N4LAFNl0524fglOFc_ylSZIIwRtTZkU3245daom7k1c",
+  },
   openGraph: {
     type: "website",
     locale: SITE.locale,
     url: `${SITE.url}/`,
-    siteName: SITE.name,
+    siteName: SITE.brand,
     title: "Nối Mi · Nail Design · Làm Móng · Gội Đầu Thư Giãn tại Tân Phú",
     description:
       "Salon Gạo Beauty tại Quận Tân Phú, TP.HCM — nối mi thiết kế, nail design, làm móng, gội đầu thư giãn. Đặt lịch: 0908 767 818.",

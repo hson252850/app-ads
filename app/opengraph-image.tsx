@@ -37,10 +37,10 @@ export default function OpengraphImage() {
             color: "#E7D9F7",
           }}
         >
-          {SITE.alternateName}
+          {SITE.gmbName}
         </div>
         <div style={{ fontSize: 132, fontWeight: 700, margin: "16px 0 8px" }}>
-          {SITE.name}
+          {SITE.brand}
         </div>
         <div style={{ fontSize: 40, color: "#F1E9FA", maxWidth: 900 }}>
           Nối mi thiết kế · Nail design · Làm móng · Gội đầu thư giãn
