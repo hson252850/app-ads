@@ -23,21 +23,23 @@
     { "href": "#dichvu", "label": "Dịch vụ" },
     { "href": "#daotao", "label": "Đào tạo" },
     { "href": "#gallery", "label": "Gallery" },
+    { "href": "#hoidap", "label": "Hỏi đáp" },
     { "href": "#lienhe", "label": "Liên hệ" }
   ],
   "hero": {
-    "eyebrow": "Chuyên Nối Mi · Nail · Gội Đầu Thư Giãn",
+    "eyebrow": "Chuyên Mi Thiết Kế · Nail Design · Gội Đầu Thư Giãn · Tân Phú",
     "title": "Gạo Beauty",
-    "description": "Không gian làm đẹp riêng cho phụ nữ hiện đại — nơi từng đường mi, từng nét vẽ nail và từng phút thư giãn đều được chăm chút như một tác phẩm.",
-    "marquee": ["Nối Mi", "Nail Design", "Gội Đầu Thư Giãn", "Nhận Đào Tạo Học Viên"]
+    "subtitle": "Nối mi thiết kế · Nail design · Làm móng · Gội đầu thư giãn tại Quận Tân Phú",
+    "description": "Không gian làm đẹp riêng cho phụ nữ hiện đại tại Quận Tân Phú, TP.HCM — nơi từng đường mi, từng nét vẽ nail và từng phút thư giãn đều được chăm chút như một tác phẩm. Salon nằm tại Chung cư Nhiêu Lộc, đối diện cổng trường tiểu học Tân Hương.",
+    "marquee": ["Nối Mi Thiết Kế", "Nail Design", "Làm Móng", "Gội Đầu Thư Giãn", "Tân Phú"]
   },
   "about": {
     "eyebrow": "Về chúng tôi",
-    "title": "Gạo Beauty — nơi vẻ đẹp bắt đầu từ sự tinh tế",
+    "title": "Gạo Beauty — salon nối mi & nail design tại Quận Tân Phú",
     "image": "/assets/IMG_1924.JPG",
     "paragraphs": [
-      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty chuyên sâu ba lĩnh vực: nối mi, nail và gội đầu thư giãn. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
-      "Đội ngũ kỹ thuật viên được đào tạo bài bản, cập nhật liên tục các kỹ thuật mi và nail mới nhất, cùng quy trình vệ sinh dụng cụ nghiêm ngặt cho từng khách."
+      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty là địa chỉ quen thuộc của chị em khu vực Quận Tân Phú, chuyên sâu ba lĩnh vực: nối mi thiết kế, nail design – làm móng và gội đầu thư giãn. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
+      "Đội ngũ kỹ thuật viên hơn 16 năm kinh nghiệm, cập nhật liên tục các kỹ thuật nối mi và nail mới nhất, cùng quy trình vệ sinh dụng cụ nghiêm ngặt cho từng khách. Salon nằm tại Chung cư Nhiêu Lộc (012D, Quận Tân Phú), ngay đối diện cổng trường tiểu học Tân Hương — thuận tiện cho khách ở Tân Quý, Hoà Thạnh, Phú Thọ Hoà, Sơn Kỳ và các phường lân cận."
     ],
     "stats": [
       { "value": "16+", "label": "Năm kinh nghiệm" },
@@ -48,16 +50,16 @@
   "services": [
     {
       "tag": "Chuyên sâu",
-      "title": "Nối Mi",
-      "desc": "Nối mi theo dáng mắt, từ Classic tự nhiên đến Volume, Mega Volume dày mượt.",
+      "title": "Nối Mi Thiết Kế",
+      "desc": "Nối mi thiết kế theo dáng mắt tại Tân Phú — từ Classic tự nhiên, Volume bồng bềnh đến Mega Volume dày mượt. Kỹ thuật viên tư vấn độ cong và độ dày hợp gương mặt; keo cùng mi đạt chuẩn, giữ dáng bền đẹp 3–4 tuần.",
       "items": [
         { "name": "Nối mi (tùy dáng & độ dày)", "price": "200.000đ – 380.000đ" }
       ]
     },
     {
       "tag": "Làm móng",
-      "title": "Nail",
-      "desc": "Cắt da, sơn gel, sơn thạch, úp – phá móng, vẽ và đính đá trang trí; chăm sóc gót chân.",
+      "title": "Nail Design / Làm Móng",
+      "desc": "Làm móng tại Tân Phú: sơn gel, sơn thạch, sơn mắt mèo, đắp – úp – phá móng, vẽ nail design và đính đá theo yêu cầu. Có cắt da tay, chà gót chân và chăm sóc da tay. Mẫu cập nhật theo mùa, hợp mọi độ tuổi.",
       "items": [
         { "name": "Cắt da tay / chân", "price": "30.000đ" },
         { "name": "Sơn thường", "price": "30.000đ" },
@@ -75,7 +77,7 @@
     {
       "tag": "Thư giãn",
       "title": "Gội Đầu Thư Giãn",
-      "desc": "Gội thường, gội thảo dược, tẩy tế bào chết và massage đầu – vai – gáy thư giãn.",
+      "desc": "Gội đầu thư giãn tại Tân Phú với thảo dược, kết hợp tẩy tế bào chết, đắp mặt nạ và massage đầu – vai – gáy giúp xả căng thẳng sau ngày dài. Không gian yên tĩnh, khăn và dụng cụ vệ sinh riêng từng khách.",
       "items": [
         { "name": "Gội thường", "price": "50.000đ" },
         { "name": "Gội thảo dược", "price": "60.000đ" },
@@ -104,13 +106,39 @@
     ]
   },
   "gallery": [
-    { "id": "gal-1", "src": "/gallery/gal-1.webp", "label": "Nối mi" },
-    { "id": "gal-2", "src": "/gallery/gal-2.webp", "label": "Nail design" },
-    { "id": "gal-3", "src": "/gallery/gal-3.webp", "label": "Gội đầu thư giãn" },
-    { "id": "gal-4", "src": "/gallery/gal-4.webp", "label": "Không gian salon" },
-    { "id": "gal-5", "src": "/gallery/gal-5.webp", "label": "Khách hàng" },
-    { "id": "gal-6", "src": "/gallery/gal-6.webp", "label": "Sản phẩm" },
-    { "id": "gal-7", "src": "/gallery/gal-7.webp", "label": "Đội ngũ" },
-    { "id": "gal-8", "src": "/gallery/gal-8.webp", "label": "Học viên thực hành" }
+    { "id": "gal-1", "src": "/gallery/gal-1.webp", "label": "Nối mi Classic tự nhiên tại Gạo Beauty Tân Phú" },
+    { "id": "gal-2", "src": "/gallery/gal-2.webp", "label": "Mẫu nail design đính đá làm tại Tân Phú" },
+    { "id": "gal-3", "src": "/gallery/gal-3.webp", "label": "Gội đầu thư giãn thảo dược tại salon Tân Phú" },
+    { "id": "gal-4", "src": "/gallery/gal-4.webp", "label": "Không gian salon Gạo Beauty ở Quận Tân Phú" },
+    { "id": "gal-5", "src": "/gallery/gal-5.webp", "label": "Khách hàng làm nối mi tại Gạo Beauty Tân Phú" },
+    { "id": "gal-6", "src": "/gallery/gal-6.webp", "label": "Bộ sơn gel và dụng cụ làm móng tại salon" },
+    { "id": "gal-7", "src": "/gallery/gal-7.webp", "label": "Đội ngũ kỹ thuật viên Gạo Beauty Tân Phú" },
+    { "id": "gal-8", "src": "/gallery/gal-8.webp", "label": "Học viên thực hành nối mi tại lớp đào tạo Gạo Beauty" }
+  ],
+  "faq": [
+    {
+      "q": "Gạo Beauty ở đâu tại Quận Tân Phú?",
+      "a": "Salon ở Chung cư Nhiêu Lộc, 012D, Quận Tân Phú, TP.HCM — ngay đối diện cổng trường tiểu học Tân Hương. Rất gần các phường Tân Quý, Hoà Thạnh, Phú Thọ Hoà, Sơn Kỳ."
+    },
+    {
+      "q": "Nối mi ở Tân Phú giá bao nhiêu?",
+      "a": "Nối mi thiết kế tại Gạo Beauty từ 200.000đ đến 380.000đ tuỳ dáng mi và độ dày (Classic, Volume, Mega Volume). Kỹ thuật viên tư vấn miễn phí trước khi làm."
+    },
+    {
+      "q": "Làm móng (nail) ở Gạo Beauty có những gì?",
+      "a": "Sơn thường 30.000đ, sơn gel 80.000đ, sơn thạch 90.000đ, sơn mắt mèo/Flash 100.000đ–130.000đ, úp móng 80.000đ–110.000đ, vẽ và đính đá từ 10.000đ/ngón. Có cắt da tay/chân và chà gót chân."
+    },
+    {
+      "q": "Gội đầu thư giãn ở Tân Phú tại salon gồm những gì?",
+      "a": "Gội thường 50.000đ, gội thảo dược 60.000đ, gội đầu + tẩy tế bào chết + mặt nạ 70.000đ, combo gội + tẩy TBC + massage + đắp mặt nạ 100.000đ. Kèm massage đầu – vai – gáy thư giãn."
+    },
+    {
+      "q": "Có cần đặt lịch trước không?",
+      "a": "Nên đặt trước qua điện thoại hoặc Zalo 0908 767 818 để chủ động thời gian, nhất là cuối tuần. Salon mở cửa 7:30–20:00 tất cả các ngày trong tuần."
+    },
+    {
+      "q": "Gạo Beauty có nhận đào tạo nghề nối mi và nail không?",
+      "a": "Có. Salon mở lớp nối mi (cơ bản – nâng cao) và nail chuyên sâu: lớp nhỏ, thực hành trên khách thật, cấp chứng chỉ và hỗ trợ định hướng mở tiệm. Liên hệ 0908 767 818 để được tư vấn khoá học."
+    }
   ]
 }

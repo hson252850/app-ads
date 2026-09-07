@@ -15,7 +15,7 @@ export default function Contact({ contact }: ContactProps) {
           Liên hệ &amp; đặt lịch
         </p>
         <h2 className="mb-6 font-heading text-[clamp(28px,4vw,38px)] font-semibold text-purple-900">
-          Ghé Gạo Beauty hôm nay
+          Ghé Gạo Beauty tại Quận Tân Phú
         </h2>
 
         <div className="flex flex-col gap-5">
@@ -27,13 +27,17 @@ export default function Contact({ contact }: ContactProps) {
               <p className="m-0 text-[15px] font-semibold text-purple-900">
                 Địa chỉ
               </p>
-              <p className="mt-1 text-[14.5px] leading-[1.6] text-ink-3">
+              <address className="mt-1 text-[14.5px] not-italic leading-[1.6] text-ink-3">
                 {contact.addressLines.map((line, i) => (
                   <span key={i}>
                     {line}
                     {i < contact.addressLines.length - 1 && <br />}
                   </span>
                 ))}
+              </address>
+              <p className="mt-2 text-[13.5px] leading-[1.6] text-ink-4">
+                Phục vụ khách khu vực Quận Tân Phú và lân cận: Tân Quý, Tân
+                Thành, Hoà Thạnh, Phú Thọ Hoà, Sơn Kỳ, Tân Sơn Nhì.
               </p>
             </div>
           </div>

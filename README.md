@@ -46,12 +46,19 @@ components/
   Services.tsx      # 3 card dịch vụ + bảng giá (đồng bộ Google Business)
   Training.tsx      # 3 khóa học + ảnh gal-8.webp (tỉ lệ 4:5)
   Gallery.tsx       # lưới 8 ảnh (2 cột mobile / 4 desktop)
+  Faq.tsx           # accordion <details> câu hỏi thường gặp (SEO long-tail)
   Contact.tsx       # địa chỉ / SĐT / giờ + nhúng Google Maps + nút Zalo
   Footer.tsx
   SectionHead.tsx   # cụm tiêu đề canh giữa (Dịch vụ, Gallery)
+  JsonLd.tsx        # structured data: LocalBusiness + WebSite + FAQPage
+app/
+  sitemap.ts        # sinh /sitemap.xml lúc build
+  robots.ts         # sinh /robots.txt lúc build
+  opengraph-image.tsx  # sinh ảnh OG 1200×630 (next/og) lúc build
 data/
   content.json      # toàn bộ nội dung — sửa ở đây, không cần đụng code
 lib/content.ts      # import content.json, ép kiểu SiteContent
+lib/seo.ts          # hằng số SEO: domain, toạ độ, giờ, rating, social
 types/content.ts    # kiểu dữ liệu
 public/
   assets/IMG_1924.JPG
@@ -81,6 +88,44 @@ giữ đúng shape `SiteContent` trong `types/content.ts`.
 
 Không có form nhập liệu. Đặt lịch qua gọi điện / Zalo trực tiếp. Nếu cần thêm form
 đặt lịch — làm ở bước sau.
+
+## SEO
+
+Từ khoá chủ đạo: *nối mi Tân Phú, làm móng Tân Phú, nail design, gội đầu thư giãn
+Tân Phú, mi thiết kế*.
+
+**On-page (đã làm trong code):**
+
+- `app/layout.tsx` — title/description có "Tân Phú", canonical, Open Graph,
+  Twitter card, `metadataBase`, robots.
+- `app/sitemap.ts` + `app/robots.ts` → `/sitemap.xml`, `/robots.txt`.
+- `app/opengraph-image.tsx` → ảnh share 1200×630 (đổi thiết kế tại đây).
+- `components/JsonLd.tsx` — structured data `HealthAndBeautyBusiness` + `NailSalon`
+  (địa chỉ, toạ độ, giờ mở cửa, bảng giá `OfferCatalog`, `areaServed`) +
+  `WebSite` + `FAQPage`. Số liệu chỉnh trong `lib/seo.ts`.
+- H1 (Hero) có cụm từ khoá; địa danh "Tân Phú" rải trong hero/about/dịch vụ/
+  footer; alt ảnh mô tả; section FAQ (`data/content.json` → `faq`).
+
+**`lib/seo.ts` cần cập nhật khi có dữ liệu thật:**
+
+- `rating.value` / `rating.count` — điền số sao + số lượt đánh giá Google Maps
+  (đang `null` nên schema bỏ `aggregateRating`; **không** bịa số).
+- `social.facebook` / `instagram` / `tiktok` — dán URL khi đã tạo trang.
+
+**Off-page (chưa làm — quyết định phần lớn thứ hạng local):**
+
+1. **Google Business Profile** — claim + xác minh; category chính "Tiệm làm
+   móng", phụ "Dịch vụ nối mi lông mi" + "Thẩm mỹ viện"; giờ 7:30–20:00; up
+   20–30 ảnh thật; xin 10+ đánh giá; trả lời Q&A; đăng bài đều.
+2. **NAP nhất quán** — cùng 1 tên/địa chỉ/SĐT trên website, GBP, Facebook, Zalo,
+   Foody… Tên chuẩn: **Gạo Beauty** (mô tả kèm "Nối Mi Tân Phú").
+3. **Google Search Console + Bing Webmaster** — xác minh `www.noimitanphu.com`,
+   nộp `sitemap.xml`, request indexing.
+4. **Apex redirect** — đảm bảo `noimitanphu.com` → `www.noimitanphu.com` (301).
+5. **Mạng xã hội** — tạo Facebook/Instagram/TikTok, gắn link vào `lib/seo.ts`
+   (`social`) để đưa vào footer + schema `sameAs`.
+6. **Citation/backlink địa phương** — khai báo trên directory VN, nhóm Facebook
+   khu Tân Phú.
 
 ## Deploy — GitHub Pages
 

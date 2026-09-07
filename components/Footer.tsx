@@ -19,9 +19,9 @@ export default function Footer({ brand, contact }: FooterProps) {
             {brand.suffix}
           </span>
         </div>
-        <p className="m-0 max-w-[480px] text-[13.5px] leading-[1.7] text-footer-1">
-          Chuyên mi thiết kế, nail design, gội đầu thư giãn. Nhận đào tạo học
-          viên.
+        <p className="m-0 max-w-[520px] text-[13.5px] leading-[1.7] text-footer-1">
+          Salon nối mi thiết kế, nail design, làm móng &amp; gội đầu thư giãn tại
+          Quận Tân Phú, TP.HCM. Nhận đào tạo học viên nối mi và nail.
         </p>
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/[0.12] pt-5">
           <p className="m-0 text-[12.5px] text-footer-2">

@@ -31,6 +31,11 @@ export interface GalleryItem {
   label: string;
 }
 
+export interface FaqItem {
+  q: string;
+  a: string;
+}
+
 export interface Brand {
   name: string;
   suffix: string;
@@ -57,6 +62,8 @@ export interface SiteContent {
   hero: {
     eyebrow: string;
     title: string;
+    /** Dòng từ khoá đi kèm trong <h1> (SEO). */
+    subtitle: string;
     description: string;
     marquee: string[];
   };
@@ -77,4 +84,5 @@ export interface SiteContent {
     courses: Course[];
   };
   gallery: GalleryItem[];
+  faq: FaqItem[];
 }

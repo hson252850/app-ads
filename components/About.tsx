@@ -14,7 +14,7 @@ export default function About({ about }: AboutProps) {
       <figure className="m-0 overflow-hidden rounded-[24px] shadow-[var(--shadow-img)]">
         <Image
           src={about.image}
-          alt="Chủ salon Gạo Beauty"
+          alt="Chủ salon Gạo Beauty — chuyên nối mi thiết kế & nail design tại Quận Tân Phú"
           width={868}
           height={538}
           priority

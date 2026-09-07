@@ -51,7 +51,7 @@ export default function Training({ training, contact }: TrainingProps) {
       <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] shadow-[var(--shadow-img-2)]">
         <Image
           src={training.image}
-          alt="Học viên thực hành tại lớp đào tạo Gạo Beauty"
+          alt="Học viên thực hành nối mi tại lớp đào tạo nghề Gạo Beauty Tân Phú"
           fill
           sizes="(min-width: 860px) 40vw, 100vw"
           className="object-cover"

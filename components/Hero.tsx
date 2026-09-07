@@ -49,10 +49,15 @@ export default function Hero({ hero, contact }: HeroProps) {
         <p className="mb-[18px] font-heading text-[13px] uppercase tracking-[4px] text-[#E7D9F7] opacity-0 animate-hero-eyebrow motion-reduce:animate-none motion-reduce:opacity-100">
           {hero.eyebrow}
         </p>
-        <h1 className="font-script text-[clamp(56px,10vw,110px)] leading-none text-white opacity-0 animate-hero-title motion-reduce:animate-none motion-reduce:opacity-100">
-          {hero.title}
+        <h1 className="opacity-0 animate-hero-title motion-reduce:animate-none motion-reduce:opacity-100">
+          <span className="block font-script text-[clamp(56px,10vw,110px)] leading-none text-white">
+            {hero.title}
+          </span>
+          <span className="mx-auto mt-4 block max-w-[720px] font-heading text-[clamp(16px,2.4vw,22px)] font-medium leading-[1.5] text-[#E7D9F7]">
+            {hero.subtitle}
+          </span>
         </h1>
-        <p className="mx-auto mb-9 mt-[22px] max-w-[640px] text-[clamp(17px,2.4vw,22px)] leading-[1.6] text-[#F1E9FA]">
+        <p className="mx-auto mb-9 mt-[22px] max-w-[640px] text-[clamp(16px,2.2vw,20px)] leading-[1.6] text-[#F1E9FA]">
           {hero.description}
         </p>
         <div className="flex flex-wrap justify-center gap-[14px]">

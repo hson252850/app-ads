@@ -9,7 +9,10 @@ export default function Services({ services }: ServicesProps) {
   return (
     <section id="dichvu" className="bg-lav-100 px-6 py-24">
       <div className="mx-auto max-w-[1200px]">
-        <SectionHead eyebrow="Dịch vụ chủ đạo" title="Bảng giá dịch vụ" />
+        <SectionHead
+          eyebrow="Dịch vụ chủ đạo"
+          title="Bảng giá nối mi, nail & gội đầu thư giãn tại Tân Phú"
+        />
 
         <div className="grid grid-cols-1 gap-7 nav:grid-cols-3">
           {services.map((svc) => (
