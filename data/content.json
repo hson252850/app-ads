@@ -36,11 +36,11 @@
     "title": "Gạo Beauty — nơi vẻ đẹp bắt đầu từ sự tinh tế",
     "image": "/assets/IMG_1924.JPG",
     "paragraphs": [
-      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty chuyên sâu ba lĩnh vực: nối mi, nail và gội đầu – chăm sóc da. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
+      "Ra đời với mong muốn mang đến một chuẩn làm đẹp tỉ mỉ và cá nhân hoá, Gạo Beauty chuyên sâu ba lĩnh vực: nối mi, nail và gội đầu thư giãn. Mỗi khách hàng được tư vấn riêng để tìm ra phong cách phù hợp nhất với gương mặt, đôi tay và nhịp sống của mình.",
       "Đội ngũ kỹ thuật viên được đào tạo bài bản, cập nhật liên tục các kỹ thuật mi và nail mới nhất, cùng quy trình vệ sinh dụng cụ nghiêm ngặt cho từng khách."
     ],
     "stats": [
-      { "value": "3+", "label": "Năm kinh nghiệm" },
+      { "value": "16+", "label": "Năm kinh nghiệm" },
       { "value": "1000+", "label": "Khách hàng hài lòng" },
       { "value": "3", "label": "Dịch vụ chuyên sâu" }
     ]
@@ -51,15 +51,15 @@
       "title": "Nối Mi",
       "desc": "Nối mi theo dáng mắt, từ Classic tự nhiên đến Volume, Mega Volume dày mượt.",
       "items": [
-        { "name": "Nối mi (tùy dáng & độ dày)", "price": "200.000đ – 380.000đ" },
-        { "name": "Combo gội đầu + tẩy TBC + massage + đắp mặt nạ", "price": "99.000đ" }
+        { "name": "Nối mi (tùy dáng & độ dày)", "price": "200.000đ – 380.000đ" }
       ]
     },
     {
       "tag": "Làm móng",
       "title": "Nail",
-      "desc": "Sơn gel, sơn thạch, đắp – úp móng, vẽ và đính đá trang trí theo yêu cầu.",
+      "desc": "Cắt da, sơn gel, sơn thạch, úp – phá móng, vẽ và đính đá trang trí; chăm sóc gót chân.",
       "items": [
+        { "name": "Cắt da tay / chân", "price": "30.000đ" },
         { "name": "Sơn thường", "price": "30.000đ" },
         { "name": "Sơn gel", "price": "80.000đ" },
         { "name": "Sơn thạch", "price": "90.000đ" },
@@ -67,22 +67,20 @@
         { "name": "Sơn French / Ombre", "price": "10.000đ – 20.000đ / ngón" },
         { "name": "Trang trí móng (vẽ, đính đá, tráng gương)", "price": "10.000đ – 30.000đ / ngón" },
         { "name": "Phủ cứng móng", "price": "30.000đ – 50.000đ" },
-        { "name": "Úp móng", "price": "80.000đ – 100.000đ" },
-        { "name": "Fill / phá móng úp, phá gel", "price": "20.000đ – 80.000đ" },
-        { "name": "Chà gót chân + tẩy da chết", "price": "120.000đ – 150.000đ" }
+        { "name": "Úp móng", "price": "80.000đ – 110.000đ" },
+        { "name": "Phá móng (úp / gel)", "price": "20.000đ – 40.000đ" },
+        { "name": "Tẩy tế bào chết + ngâm thảo dược + chà gót + massage chân", "price": "110.000đ" }
       ]
     },
     {
       "tag": "Thư giãn",
-      "title": "Gội Đầu & Chăm Sóc Da",
-      "desc": "Gội thảo dược, tẩy tế bào chết, massage thư giãn kết hợp chăm sóc da mặt.",
+      "title": "Gội Đầu Thư Giãn",
+      "desc": "Gội thường, gội thảo dược, tẩy tế bào chết và massage đầu – vai – gáy thư giãn.",
       "items": [
-        { "name": "Gội thường + rửa mặt", "price": "49.000đ" },
-        { "name": "Gội thảo dược", "price": "59.000đ" },
-        { "name": "Tẩy TBC + massage + đắp mặt", "price": "79.000đ" },
-        { "name": "Cắt da tay / chân", "price": "30.000đ" },
-        { "name": "Cạo mặt", "price": "20.000đ" },
-        { "name": "Lột mụn", "price": "30.000đ – 40.000đ" },
+        { "name": "Gội thường", "price": "50.000đ" },
+        { "name": "Gội thảo dược", "price": "60.000đ" },
+        { "name": "Gội đầu + tẩy tế bào chết + mặt nạ thư giãn", "price": "70.000đ" },
+        { "name": "Combo gội đầu + tẩy TBC + massage + đắp mặt nạ", "price": "100.000đ" },
         { "name": "Trang điểm, làm tóc", "price": "150.000đ – 200.000đ" },
         { "name": "Kẹp thẳng, bấm phồng, uốn giả", "price": "50.000đ – 60.000đ" }
       ]
@@ -102,10 +100,6 @@
       {
         "name": "Khóa Nail chuyên sâu",
         "detail": "Kỹ thuật sơn gel, sơn thạch, vẽ tay, đính đá và tư vấn mở tiệm nail."
-      },
-      {
-        "name": "Khóa Gội Đầu Dưỡng Sinh",
-        "detail": "Kỹ thuật massage, bấm huyệt và chăm sóc da đầu chuyên nghiệp."
       }
     ]
   },
