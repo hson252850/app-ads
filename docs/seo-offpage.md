@@ -199,9 +199,14 @@ Tự đăng câu hỏi rồi tự trả lời (được phép). Dùng luôn 6 c�
 
 Đang có 1 đánh giá. **Mốc cần: ≥ 5** để website bật hiển thị sao (schema `aggregateRating`).
 
-### 2.1 Lấy link đánh giá
-Trong GBP → nút **"Yêu cầu đánh giá" / "Ask for reviews"** → copy link rút gọn (dạng `g.page/…/review` hoặc `search.google.com/local/writereview?placeid=…`).
-Gửi link đó cho Claude → Claude tạo file **mã QR** để in đặt ở quầy.
+### 2.1 Link đánh giá + mã QR
+
+- **Link đánh giá:** https://g.page/r/CZdYa7l01F5nEBM/review
+- **Mã QR để in:** `docs/assets/qr-danh-gia-google.png` (540×540) hoặc
+  `docs/assets/qr-danh-gia-google.svg` (vector — gửi file này cho tiệm in để nét ở mọi kích cỡ).
+- Cách dùng: in cỡ ~5–8 cm, ép plastic hoặc làm standee mini để ở quầy thu ngân /
+  bàn nail; kèm dòng chữ *"Quét đánh giá 5⭐ cho tụi mình nhé 🥰"*.
+- Rút gọn cho tin nhắn nếu muốn: dùng link `g.page/r/CZdYa7l01F5nEBM/review` luôn (đã ngắn).
 
 ### 2.2 Mẫu tin nhắn xin đánh giá (Zalo / SMS)
 
