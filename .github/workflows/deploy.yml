@@ -1,24 +1,37 @@
-name: Deploy tới GitHub Pages
+name: Build & publish static site
+
+# GitHub Pages của repo này đang ở chế độ "Deploy from a branch" (main / root).
+# Workflow build Next.js ra tĩnh rồi commit file build vào gốc nhánh main để
+# Pages phục vụ. Giữ nguyên source, CNAME, app-ads.txt.
 
 on:
   push:
     branches: [main]
+    paths:
+      - "app/**"
+      - "components/**"
+      - "lib/**"
+      - "data/**"
+      - "public/**"
+      - "types/**"
+      - "next.config.mjs"
+      - "postcss.config.mjs"
+      - "tsconfig.json"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
-# Quyền cho GITHUB_TOKEN để deploy lên Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
-# Chỉ chạy 1 lượt deploy tại một thời điểm
 concurrency:
-  group: pages
+  group: publish
   cancel-in-progress: true
 
 jobs:
-  build:
-    # Chỉ deploy từ repo app-ads (repo có Pages + CNAME). Bỏ qua ở repo nguồn.
+  publish:
+    # Chỉ chạy ở repo deploy (có Pages + CNAME), bỏ qua ở repo nguồn.
     if: github.repository == 'hson252850/app-ads'
     runs-on: ubuntu-latest
     steps:
@@ -31,37 +44,31 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Cấu hình Pages
-        uses: actions/configure-pages@v5
-        with:
-          # Tự bật Pages + đặt nguồn build = GitHub Actions nếu chưa cấu hình
-          enablement: true
-
       - name: Cài dependencies
         run: npm ci
 
       - name: Build (xuất tĩnh vào ./out)
         run: npm run build
 
-      - name: Giữ file cấu hình ads + tắt Jekyll
+      - name: Đưa bản build ra gốc repo
         run: |
-          # CNAME (custom domain) và app-ads.txt nằm ở gốc repo, copy vào bản build
           cp CNAME out/CNAME
           cp app-ads.txt out/app-ads.txt
           touch out/.nojekyll
+          # Xoá bản publish cũ ở gốc, thay bằng bản mới (source vẫn giữ nguyên)
+          rm -rf _next 404 404.html index.html index.txt .nojekyll \
+                 assets gallery favicon.ico icon.png apple-icon.png
+          cp -R out/. .
+          rm -rf out
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit bản build
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Không có thay đổi ở bản build."
+          else
+            git commit -m "chore: rebuild static site [skip ci]"
+            git push
+          fi
