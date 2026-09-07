@@ -33,6 +33,9 @@ jobs:
 
       - name: Cấu hình Pages
         uses: actions/configure-pages@v5
+        with:
+          # Tự bật Pages + đặt nguồn build = GitHub Actions nếu chưa cấu hình
+          enablement: true
 
       - name: Cài dependencies
         run: npm ci
