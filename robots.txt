@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://noimitanphu.com
+Sitemap: https://noimitanphu.com/sitemap.xml
